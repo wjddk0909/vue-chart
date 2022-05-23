@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import Chart from "chart.js";
+// import Chart from "chart.js";
 
 export default {
   name: "BarChart",
   mounted() { // getElementById 쿼리접근자를 썼기때문에 mount된 후에
-    const barChart = new Chart(this.$refs.barChart, {
+    const barChart = new this.$_Chart(this.$refs.barChart, {
       type: 'bar',
       data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],

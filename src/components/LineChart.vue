@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Chart from 'chart.js';
+// import Chart from 'chart.js';
 
 export default {
   name: "LineChart",
@@ -33,7 +33,7 @@ export default {
       options: {}
     };
 
-    const myChart = new Chart(
+    const myChart = new this.$_Chart(
         // document.getElementById('lineChart'),
         this.$refs.lineChart,
         config
